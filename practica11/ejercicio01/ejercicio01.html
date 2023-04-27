@@ -4,35 +4,24 @@
   <meta charset="utf-8">
   <title>Prevalidación</title>
   <link rel="stylesheet" href="ejercicio01.css">
-  <script src="ejercicio01.js" defer></script>
+
 </head>
 
-  
 <body>
-  <form id ='formulario' method="get" action="">
+  <form method="get" action="">
 
     <fieldset>
       <legend>Detalles de la foto</legend>
       <table>
         <tr>
-          <td>
-            <p id="error" class="oculto">
-            <strong>Error</strong>
-            <label id="errorMensaje"></label>
-          </p>
-          </td>
-        </tr>
-      
-        <tr>
           <td colspan="2">
             <p>
-              <label>Titulo * </label> </br>
-             <input type="text" name="title" size="80" class="requerido">
-              
+              <label>Título</label><br>
+              <input type="text" name="title"  size="80">
             </p>
             <p>
-              <label>Descripcion * </label><br/>
-              <textarea name="description" rows="7" cols="85" class="requerido"></textarea>
+              <label>Descripcion</label><br/>
+              <textarea name="description" rows="7" cols="85">
               </textarea>
             </p>
           </td>
@@ -93,11 +82,8 @@
         <tr>
           <td colspan="2">
             <div class="rec">
-              <label>Acepto la licencia de software * 
-            
-              </label>
-              <input type="checkbox" name="accept" class="requerido">
-              
+              <label>Acepto la licencia de software</label>
+              <input type="checkbox" name="accept">
             </div>
           </td>
         </tr>

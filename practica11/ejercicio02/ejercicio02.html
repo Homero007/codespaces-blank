@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <title>ejercicio02</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="ejercicio02.css">
+  <link rel="stylesheet" href="css/ejercicio02.css">
+  <script src="scripts/java.js" defer></script>
 </head>
 <body>
   <form method="get" action="">
 
-    <div id="search">
+    <div id="search-bar">
       <input type="search" name="search" placeholder="Búsqueda de títulos"><input type="submit" value="Search">
     </div>
 
-    <div id="set">
+    <div id="action-set">
       <select name="action">
         <option value="0">Acciones</option>
         <option value="1">Archivo</option>
@@ -31,7 +32,7 @@
       <input type="submit" value="Filtrar">
     </div>
 
-    <div id="art">
+    <div id="artworks">
       <table>
         <caption>Obras</caption>
         <thead>
@@ -45,47 +46,52 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="5">
             <td><input type="checkbox" name="index[]" value="10"></td>
-            <td><img src="images/05030.jpg" alt="Muerte de Marat"></td>
-            <td><em>Muerte de  Marat</em></td>
-            <td>David, Jacques-Louis </td>
+            <td><img class="imagenita" src="images/05030.jpg" alt="Muerte de Marat" onmouseover="ampliarImagen(event)" onmouseout="ocultarImagen()" ></td>
+            <div id="imagen-ampliada"></div>
+            <td id="uno"><em>Muerte de  Marat</em></td>
+            <td id="uno">David, Jacques-Louis </td>
             <td>1793</td>
             <td>Romanticismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt="">Editar</a></button></td>
           </tr>
-          <tr>
+          <tr class="2">
             <td><input type="checkbox" name="index[]" value="20"></td>
-            <td><img src="images/120010.jpg" alt="Retrato de Eleanor de Toledo"></td>
-            <td><em>Retrato de Eleanor de Toledo</em></td>
-            <td>Bronzino, Agnolo </td>
+            <td><img class="imagenita" src="images/120010.jpg" alt="Retrato de Eleanor de Toledo" onmouseover="ampliarImagen(event)" onmouseout="ocultarImagen()" ></td>
+            <div id="imagen-ampliada"></div>
+            <td id="uno"><em>Retrato de Eleanor de Toledo</em></td>
+            <td id="uno">Bronzino, Agnolo </td>
             <td>1545</td>
             <td>Manierismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt=""> Editar</a></button></td>
           </tr>
-          <tr>
+          <tr class="5">
             <td><input type="checkbox" name="index[]" value="30"></td>
-            <td><img src="images/07020.jpg" alt="La libertad guiando al pueblo"></td>
-            <td><em>La libertad guiando al pueblo</em></td>
-            <td>Delacroix, Eugene    </td>
+            <td><img class="imagenita" src="images/07020.jpg" alt="La libertad guiando al pueblo" onmouseover="ampliarImagen(event)" onmouseout="ocultarImagen()" ></td>
+            <div id="imagen-ampliada"></div>
+            <td id="uno"><em>La libertad guiando al pueblo</em></td>
+            <td id="uno">Delacroix, Eugene    </td>
             <td>1830</td>
             <td>Romanticismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt=""> Editar</a></button></td>
           </tr>
-          <tr>
+          <tr class="4">
             <td><input type="checkbox" name="index[]" value="40"></td>
-            <td><img src="images/13030.jpg" alt="Arreglo en gris y negro"></td>
-            <td><em>Arreglo en gris y negro</em></td>
-            <td>Whistler, James Abbott    </td>
+            <td><img class="imagenita" src="images/13030.jpg" alt="Arreglo en gris y negro" onmouseover="ampliarImagen(event)" onmouseout="ocultarImagen()" ></td>
+            <div id="imagen-ampliada"></div>
+            <td id="uno"><em>Arreglo en gris y negro</em></td>
+            <td id="uno">Whistler, James Abbott    </td>
             <td>1871</td>
             <td>Realismo</td>
-            <td><button><a href="#"><img src="images/edit16.png" alt=""> Editarr</a></button></td>
+            <td><button><a href="#"><img src="images/edit16.png" alt=""> Editar</a></button></td>
           </tr>
-          <tr>
+          <tr class="3">
             <td><input type="checkbox" name="index[]" value="50"></td>
-            <td><img src="images/06010.jpg" alt="Mademoiselle Caroline Riviere"></td>
-            <td><em>Mademoiselle Caroline Riviere</em></td>
-            <td>Ingres, Jean-Auguste</td>
+            <td><img class="imagenita" src="images/06010.jpg" alt="Mademoiselle Caroline Riviere" onmouseover="ampliarImagen(event)" onmouseout="ocultarImagen()" ></td>
+            <div id="imagen-ampliada"></div>
+            <td id="uno"><em>Mademoiselle Caroline Riviere</em></td>
+            <td id="uno">Ingres, Jean-Auguste</td>
             <td>1806</td>
             <td>Neo-Clasicismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt="">Editar</a></button></td>
